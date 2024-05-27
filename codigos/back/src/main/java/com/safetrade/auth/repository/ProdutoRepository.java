@@ -52,7 +52,7 @@ public class ProdutoRepository {
      * Metodo para remover produto por id da lista.
      * @param id do produto a ser removido.
      */
-    public void remover(Integer id){
+    public void deletar(Integer id){
         produtos.removeIf(produto -> produto.getId() == id);
     }
 
@@ -71,7 +71,7 @@ public class ProdutoRepository {
             throw new InputMismatchException("Produto não encontrado");
         }
         //Remove produto antigo da lista.
-        remover(produto.getId());
+        deletar(produto.getId());
 
         //Depois adicionar o produto atualizado na lista.
         produtos.add(produto);

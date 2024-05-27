@@ -53,9 +53,9 @@ public class ProdutoService {
      * Metodo para deletar o produto por id
      * @param id do produto a ser deletado
      */
-    public void remover(Integer id){
+    public void deletar(Integer id){
         // Aqui poderia ter alguma lógica de validação.
-        produtoRepository.remover(id);
+        produtoRepository.deletar(id);
     }
 
 
@@ -70,7 +70,7 @@ public class ProdutoService {
 
         // Aqui poderia ter uma lógica de validação
         produto.setId(id);
-        return produtoRepository.adicionar(produto);
+        return produtoRepository.atualizar(produto);
 
     }
 }
