@@ -5,8 +5,10 @@ import java.util.InputMismatchException;
 import java.util.List;
 import java.util.Optional;
 
-import com.safetrade.auth.model.Produto;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+import com.safetrade.auth.model.Produto;
+@SpringBootApplication
 
 
 public class ProdutoRepository {
