@@ -1,13 +1,14 @@
 package com.safetrade.auth.repository;
 
 import java.util.ArrayList;
-import java.util.InputMismatchException;
 import java.util.List;
 import java.util.Optional;
 
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import com.safetrade.auth.model.Produto;
+import com.safetrade.auth.model.exception.ResourceNotFoundException;
+
 @SpringBootApplication
 
 
@@ -68,7 +69,7 @@ public class ProdutoRepository {
 
         //Se produto encontrado, for vazio, ele retorna a mensagem.
         if(produtoEncontrado.isEmpty()){
-            throw new InputMismatchException("Produto não encontrado");
+            throw new ResourceNotFoundException("Produto não pode ser atualizar pois nao existe.");
         }
         //Remove produto antigo da lista.
         deletar(produto.getId());
