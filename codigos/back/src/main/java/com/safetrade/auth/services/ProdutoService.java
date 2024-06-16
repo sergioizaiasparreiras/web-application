@@ -7,7 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.safetrade.auth.model.Produto;
-import com.safetrade.auth.repository.ProdutoRepository;
+import com.safetrade.auth.repository.ProdutoRepository_old;
 
 
 
@@ -19,7 +19,7 @@ import com.safetrade.auth.repository.ProdutoRepository;
 public class ProdutoService {
 
     @Autowired
-    private ProdutoRepository produtoRepository;
+    private ProdutoRepository_old produtoRepository;
 
     /**
      * Metodo para retornar uma lista de produtos

@@ -1,7 +1,16 @@
 package com.safetrade.auth.model;
 
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+
+@Entity
 public class Produto {
 
+    @Id //Vai transformar essa coluna em primary key
+    @GeneratedValue(strategy = GenerationType.AUTO) //Vai transformar o id generatica (autoincremente ou serial)
     //#region Atributos
     private Integer id;
 

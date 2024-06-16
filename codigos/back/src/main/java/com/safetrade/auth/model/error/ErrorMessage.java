@@ -13,7 +13,7 @@ public class ErrorMessage {
         this.status = status;
         this.mensagem = mensagem;
     }
-
+    //#region Getters e Setters
     public String getTitulo() {
         return titulo;
     }
@@ -37,4 +37,5 @@ public class ErrorMessage {
     public void setMensagem(String mensagem) {
         this.mensagem = mensagem;
     }
+    //#endregion
 }

@@ -17,8 +17,6 @@ import com.safetrade.auth.model.Produto;
 import com.safetrade.auth.services.ProdutoService;
 
 
-
-
 @RequestMapping("/api/produtos")
 @RestController
 public class ProdutoController {
