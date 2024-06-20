@@ -7,5 +7,4 @@ import com.safetrade.auth.model.Produto;
 
 @Repository
 public interface ProdutoRepository extends JpaRepository<Produto, Integer> {
-    
 }
